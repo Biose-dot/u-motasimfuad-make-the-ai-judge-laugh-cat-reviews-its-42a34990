@@ -7,7 +7,7 @@ Deadpan review shape with complaints only a cat would file: the food, the lap, t
 """
 import os
 
-ENTRY = 'One star. Food arrives late, the lap is often taken by a glowing rectangle, and the staff sheds almost as much as I do.'
+ENTRY = 'One star. Food arrives late, the lap is often occupied by a glowing rectangle, and the staff sheds almost as much as I do.'
 
 
 def main() -> None:
