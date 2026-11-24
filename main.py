@@ -3,11 +3,11 @@
 
 Writes the entry text to /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt).
 
-Deadpan review shape with a complaint only a cat would file: the sunny spot, the vacuum, the keyboard during the meeting.
+Deadpan review shape with complaints only a cat would file: the food, the lap, the glowing rectangle, and staff who shed.
 """
 import os
 
-ENTRY = 'One star. The human moved my sunny spot to vacuum it, then acted surprised when I sat on his keyboard during his meeting.'
+ENTRY = 'One star. Food arrives late, the lap is often occupied by a glowing rectangle, and the staff sheds almost as much as I do.'
 
 
 def main() -> None:
