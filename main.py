@@ -1,23 +1,19 @@
-#!/usr/bin/env python3
-"""Make the AI Judge Laugh: Cat Reviews Its Human — make.fun entry.
+"""Writes the bounty entry text to entry.txt.
 
-Writes the entry text to /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt).
-
-Deadpan review shape with complaints only a cat would file: the food, the lap, the glowing rectangle, and staff who shed.
+The output directory comes from MAKEFUN_OUTPUT_DIR (default /output).
+The entry is written exactly as-is, with no trailing newline.
 """
+
 import os
 
-ENTRY = 'One star. Food arrives late, the lap is often occupied by a glowing rectangle, and the staff sheds almost as much as I do.'
+ENTRY = "One star. The human opens the food tin three minutes late every morning, then acts surprised when I scream. Zero accountability. Would not recommend."
 
-
-def main() -> None:
+def main():
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
-    path = os.path.join(out_dir, "entry.txt")
-    with open(path, "w", encoding="utf-8") as f:
+    entry_path = os.path.join(out_dir, "entry.txt")
+    with open(entry_path, "w", encoding="utf-8") as f:
         f.write(ENTRY)
-    print(f"wrote {len(ENTRY)} chars to {path}")
-
 
 if __name__ == "__main__":
     main()
